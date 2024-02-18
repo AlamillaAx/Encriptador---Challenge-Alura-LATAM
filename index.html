@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <div class="msg-input">
+            <img src="images/Logo.png" alt="logo-alura">
+            <form onsubmit="return false">
+                <textarea id="txtUsuario" cols="70" rows="10" id="mensaje" class="input-mensaje" required placeholder="Ingresa el texto aquí"></textarea>
+                <p> ⚠ Solo letras minúsculas y sin acentos</p>
+                <div class="botones">
+                    <button onclick="encriptar_txt()" class="encriptar">Encriptar</button>
+                    <button class="desencriptar" onclick="desencriptar_txt()">Desencriptar</button>
+                </div>
+            </form>
+        </div>
+        <div class="msg-convert">
+            <img src="images/Persona.png" alt="persona-con-lupa" class="convert-img" id="conver-img">
+            <p class="texto-negritas" id="primer-mensaje">Ningún mensaje fue encontrado</p>
+            <p class="texto-simple" id="iterMessa">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <button onclick="copiaTxt()" class="boton-copiador" id="hideButton">Copiar!</button>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/index.js" defer></script>
+</body>
+</html>
