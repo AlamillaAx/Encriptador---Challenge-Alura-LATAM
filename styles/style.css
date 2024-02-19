@@ -39,6 +39,7 @@ body{
     display: inline-block;
     border-radius: 32px;
     box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
+    position: relative
 }
 
 .convert-img{
@@ -113,8 +114,13 @@ form p{
     background: white;
     border: 1px solid #0A3871;
     color:#0A3871;
-    margin: 0 auto 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
     transition: 1s;
+    position: absolute;
+    bottom: 20px;
 }
 
 .boton-copiador:hover{
